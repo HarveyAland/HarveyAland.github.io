@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvey Aland | Cloud Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f7fdfc] text-gray-800">
+  <header class="bg-[#c5d7bd] text-[#003366] py-10 text-center shadow">
+    <h1 class="text-4xl font-bold">Harvey Aland</h1>
+    <p class="text-lg mt-2">Support Specialist | Aspiring Cloud & Infrastructure Engineer</p>
+  </header>
+
+  <nav class="bg-white shadow sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex space-x-6 justify-center text-[#4c8dae] font-medium">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section id="about" class="mb-16">
+      <h2 class="text-2xl text-[#4c8dae] font-semibold border-b pb-2 mb-4">About Me</h2>
+      <p class="leading-relaxed text-lg">
+        I'm a Global Technology Support Specialist with experience supporting enterprise environments and leading identity management workflows. I'm actively learning AWS, Terraform, and DevOps practices through real-world projects as I work toward transitioning into a cloud or infrastructure engineering role. My military background instilled a strong sense of discipline and resilience, which I now apply to solving complex technical challenges in corporate IT.
+      </p>
+    </section>
+
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl text-[#4c8dae] font-semibold border-b pb-2 mb-6">Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="bg-white shadow p-5 rounded-xl">
+          <h3 class="text-xl font-bold mb-1">☁️ Cloud Resume Challenge</h3>
+          <p class="text-sm mb-2">Hosted a static resume on S3 with HTTPS via ACM, CI/CD via GitHub Actions, and global delivery via CloudFront. Managed with Terraform.</p>
+          <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] underline">Live Site</a> |
+          <a href="https://github.com/HarveyAland/aws-cloud-resume" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
+        </div>
+
+        <div class="bg-white shadow p-5 rounded-xl">
+          <h3 class="text-xl font-bold mb-1">🔐 Linux Hardening Project (CentOS 9)</h3>
+          <p class="text-sm mb-2">Raised Lynis score from 66 to 80 by hardening SSH, PAM, GRUB, services, and permissions. Included system recovery steps and screenshots.</p>
+          <a href="https://github.com/HarveyAland/linux-hardening-project" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
+        </div>
+
+        <div class="bg-white shadow p-5 rounded-xl">
+          <h3 class="text-xl font-bold mb-1">🛠️ 3-Tier Kubernetes App on AWS</h3>
+          <p class="text-sm mb-2">React + Flask + RDS deployed on EKS with Terraform, Docker, Helm & ALB controller. Includes health checks, secure subnetting, and IAM.</p>
+          <a href="https://github.com/HarveyAland/Three-tier-incident-tracker" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
+        </div>
+
+        <div class="bg-white shadow p-5 rounded-xl">
+          <h3 class="text-xl font-bold mb-1">🌦️ Serverless Weather App on ECS</h3>
+          <p class="text-sm mb-2">Flask app using OpenWeatherMap API, containerized with Docker, deployed to ECS Fargate behind an ALB. Terraform-managed VPC and services.</p>
+          <a href="https://github.com/HarveyAland/weather-app" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-2xl text-[#4c8dae] font-semibold border-b pb-2 mb-4">Contact</h2>
+      <p>Email: <a href="mailto:Harvey.aland.99@outlook.com" class="text-[#4c8dae] underline">Harvey.aland.99@outlook.com</a></p>
+      <p>GitHub: <a href="https://github.com/HarveyAland" target="_blank" class="text-[#4c8dae] underline">github.com/HarveyAland</a></p>
+      <p>Resume: <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] underline">resume.harveyaws.com</a></p>
+      <p>Location: Heswall, Merseyside</p>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-600 py-6">
+    Built with ❤️ using GitHub Pages & Tailwind CSS
+  </footer>
+</body>
+</html>
