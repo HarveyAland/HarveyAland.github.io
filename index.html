@@ -22,131 +22,136 @@
   <!-- Navigation -->
   <nav class="bg-white shadow sticky top-0 z-10">
     <div class="max-w-5xl mx-auto px-4 py-3 flex space-x-6 justify-center text-[#4c8dae] font-medium">
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#projects" class="hover:underline">Projects</a>
-      <a href="#contact" class="hover:underline">Contact</a>
+      <a href="#about" class="hover:text-[#003366] transition">About</a>
+      <a href="#projects" class="hover:text-[#003366] transition">Projects</a>
+      <a href="#contact" class="hover:text-[#003366] transition">Contact</a>
     </div>
   </nav>
 
-  <main class="max-w-4xl mx-auto px-4 py-12">
+  <main class="max-w-4xl mx-auto px-4 py-10">
     <!-- About Section -->
-    <section id="about" class="mb-16">
+    <section id="about" class="mb-12">
       <h2 class="text-3xl text-[#4c8dae] font-semibold border-b pb-2 mb-4">About Me</h2>
-     <p class="leading-relaxed text-lg">
-  I’m a Global Technology Support Specialist with hands-on experience in enterprise IT operations, system administration, and networking. Over time, I’ve expanded my skills beyond support into areas like cloud computing, scripting, and automation to strengthen my technical foundation and broaden my career path. I’m passionate about learning across multiple domains, from infrastructure and systems management to modern DevOps and cloud practices, and enjoy building efficient, reliable, and secure solutions that make technology work smarter. 
-  My military background has been a key influence in how I approach my work. It taught me discipline, structure, and the ability to stay calm under pressure while focusing on mission success. These qualities have translated directly into my technical career, where I value precision, accountability, and persistence when solving complex problems or supporting critical systems.
-</p>
+      <p class="leading-relaxed text-lg text-gray-700">
+        I’m a Global Technology Support Specialist with hands-on experience in enterprise IT operations, system administration, and networking. Over time, I’ve expanded my skills beyond support into areas like cloud computing, scripting, and automation to strengthen my technical foundation and broaden my career path. I’m passionate about learning across multiple domains, from infrastructure and systems management to modern DevOps and cloud practices, and enjoy building efficient, reliable, and secure solutions that make technology work smarter. 
+        My military background has been a key influence in how I approach my work. It taught me discipline, structure, and the ability to stay calm under pressure while focusing on mission success. These qualities have translated directly into my technical career, where I value precision, accountability, and persistence when solving complex problems or supporting critical systems.
+      </p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="mb-16">
-  <h2 class="text-3xl text-[#4c8dae] font-semibold border-b pb-2 mb-6">Projects</h2>
-  <div class="grid gap-6 sm:grid-cols-2">
+    <section id="projects" class="mb-12">
+      <h2 class="text-3xl text-[#4c8dae] font-semibold border-b pb-2 mb-6">Projects</h2>
+      <div class="grid gap-8 sm:grid-cols-2">
 
-    <!-- 1️⃣ 3-Tier Kubernetes App on AWS -->
-   <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-  <h3 class="text-xl font-bold mb-2">🛠️ 3-Tier Kubernetes App on AWS</h3>
-  <p class="text-sm mb-3">
-    Developed a full-stack “Major Incident Tracker” application with a React frontend, Flask API backend, and PostgreSQL database,
-    all deployed on Amazon EKS using Terraform, Docker, and Helm. Implemented secure networking with private subnets, IAM roles, and
-    ALB ingress for traffic management. Integrated health checks, auto-scaling, and role-based access control to simulate a
-    production-ready environment. The project demonstrates complete lifecycle management of cloud-native workloads, from
-    infrastructure provisioning to application deployment.
-  </p>
-  <div class="flex flex-wrap gap-2 text-xs mb-2">
-    <span class="bg-[#c5d7bd] px-2 py-1 rounded">Kubernetes</span>
-    <span class="bg-[#c5d7bd] px-2 py-1 rounded">AWS</span>
-    <span class="bg-[#c5d7bd] px-2 py-1 rounded">Helm</span>
-    <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
-    <span class="bg-[#c5d7bd] px-2 py-1 rounded">Docker</span>
-  </div>
-  <a href="https://github.com/HarveyAland/Three-tier-incident-tracker" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-</div>
+        <!-- 3-Tier Kubernetes App on AWS -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">🛠️ 3-Tier Kubernetes App on AWS</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Developed a full-stack “Major Incident Tracker” application with a React frontend, Flask API backend, and PostgreSQL database,
+            all deployed on Amazon EKS using Terraform, Docker, and Helm. Implemented secure networking with private subnets, IAM roles, and
+            ALB ingress for traffic management. Integrated health checks, auto-scaling, and role-based access control to simulate a
+            production-ready environment. Demonstrates complete lifecycle management of cloud-native workloads, from infrastructure provisioning to deployment.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Kubernetes</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">AWS</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Helm</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Docker</span>
+          </div>
+          <a href="https://github.com/HarveyAland/Three-tier-incident-tracker" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
 
-    <!-- 1️⃣ Azure Monitoring & Automated Remediation -->
-    <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-      <h3 class="text-xl font-bold mb-2">⚙️ Azure Monitoring & Automated Remediation</h3>
-      <p class="text-sm mb-3">
-        Designed a self-healing infrastructure monitoring solution using Azure Monitor, Log Analytics, Automation Runbooks, Logic Apps,
-        and Grafana. Implemented alert-driven remediation for VM and service failures (IIS, Nginx, Print Spooler) with Bicep-based deployment,
-        KQL-driven alerting, and near real-time visualization dashboards.
-      </p>
-      <div class="flex flex-wrap gap-2 text-xs mb-2">
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Azure</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Bicep</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Automation</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Grafana</span>
+        <!-- Azure Monitoring & Automated Remediation -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">⚙️ Azure Monitoring & Automated Remediation</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Designed a self-healing infrastructure monitoring solution using Azure Monitor, Log Analytics, Automation Runbooks, Logic Apps,
+            and Grafana. Implemented alert-driven remediation for VM and service failures (IIS, Nginx, Print Spooler) with Bicep-based deployment,
+            KQL-driven alerting, and near real-time visualization dashboards.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Azure</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Bicep</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Automation</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Grafana</span>
+          </div>
+          <a href="https://github.com/HarveyAland/azure-monitoring-remediation" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
+
+        <!-- Linux Hardening Project -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">🔐 Linux Hardening Project (CentOS 9)</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Improved Lynis security score from 66 to 80 by hardening SSH, PAM, GRUB, and system services. Documented all security measures with screenshots and recovery steps.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Linux</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Security</span>
+          </div>
+          <a href="https://github.com/HarveyAland/linux-hardening-project" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
+
+        <!-- Hybrid Azure Infrastructure Lab -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">🏢 Hybrid Azure Infrastructure Lab</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Built a hybrid Active Directory environment integrating on-prem Windows Server (AD DS) with Microsoft Entra ID (Azure AD).
+            Configured OU-based GPOs, hybrid identity sync, Azure Monitor, and Backup. Provisioned core infrastructure with Terraform
+            to simulate an enterprise hybrid setup with delegated access and secure observability.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Azure</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Active Directory</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Monitoring</span>
+          </div>
+          <a href="https://github.com/HarveyAland/azure-hybrid-infrastructure-lab" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
+
+        <!-- Serverless Weather App -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">🌦️ Serverless Weather App on ECS</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Flask app containerized with Docker and deployed to ECS Fargate behind an ALB. Infrastructure (ECS, ALB, IAM) managed via Terraform within an existing VPC.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">ECS</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Fargate</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Docker</span>
+          </div>
+          <a href="https://github.com/HarveyAland/weather-app" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
+
+        <!-- Cloud Resume Challenge -->
+        <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
+          <h3 class="text-xl font-bold mb-2">☁️ Cloud Resume Challenge</h3>
+          <p class="text-sm mb-3 text-gray-700">
+            Static resume hosted on CloudFront (S3 origin), secured with ACM and automated via GitHub Actions CI/CD. Fully managed with Terraform.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mb-3">
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">AWS</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
+            <span class="bg-[#c5d7bd] px-2 py-1 rounded">CI/CD</span>
+          </div>
+          <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition mr-2">Live Site</a>
+          <a href="https://github.com/HarveyAland/aws-cloud-resume" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">GitHub</a>
+        </div>
+
       </div>
-      <a href="https://github.com/HarveyAland/azure-monitoring-remediation" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-    </div>
-
-    <!-- 2️⃣ Linux Hardening Project -->
-    <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-      <h3 class="text-xl font-bold mb-2">🔐 Linux Hardening Project (CentOS 9)</h3>
-      <p class="text-sm mb-3">Improved Lynis security score from 66 → 80 by hardening SSH, PAM, GRUB, and system services. Documented all security measures with screenshots and recovery steps.</p>
-      <div class="flex flex-wrap gap-2 text-xs mb-2">
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Linux</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Security</span>
-      </div>
-      <a href="https://github.com/HarveyAland/linux-hardening-project" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-    </div>
-
-    <!-- 2️⃣ Hybrid Azure Infrastructure Lab -->
-    <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-      <h3 class="text-xl font-bold mb-2">🏢 Hybrid Azure Infrastructure Lab</h3>
-      <p class="text-sm mb-3">
-        Built a hybrid Active Directory environment by integrating on-prem Windows Server (AD DS) with Microsoft Entra ID (Azure AD).
-        Configured OU-based GPOs, scoped hybrid identity sync, Azure Monitor, and Azure Backup. Provisioned core infrastructure with Terraform
-        to simulate an enterprise hybrid setup with delegated access and secure observability.
-      </p>
-      <div class="flex flex-wrap gap-2 text-xs mb-2">
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Azure</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Active Directory</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Monitoring</span>
-      </div>
-      <a href="https://github.com/HarveyAland/azure-hybrid-infrastructure-lab" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-    </div>
-
-    <!-- 3️⃣ Serverless Weather App -->
-    <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-      <h3 class="text-xl font-bold mb-2">🌦️ Serverless Weather App on ECS</h3>
-      <p class="text-sm mb-3">Flask app containerized with Docker and deployed to ECS Fargate behind an ALB. Infrastructure (ECS, ALB, IAM) managed via Terraform within an existing VPC.</p>
-      <div class="flex flex-wrap gap-2 text-xs mb-2">
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">ECS</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Fargate</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Docker</span>
-      </div>
-      <a href="https://github.com/HarveyAland/weather-app" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-    </div>
-
-    <!-- 3️⃣ Cloud Resume Challenge -->
-    <div class="bg-white shadow hover:shadow-lg transition p-5 rounded-xl border border-gray-100">
-      <h3 class="text-xl font-bold mb-2">☁️ Cloud Resume Challenge</h3>
-      <p class="text-sm mb-3">Static resume hosted on CloudFront (S3 origin), secured with ACM and automated via GitHub Actions CI/CD. Fully managed with Terraform.</p>
-      <div class="flex flex-wrap gap-2 text-xs mb-2">
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">AWS</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">Terraform</span>
-        <span class="bg-[#c5d7bd] px-2 py-1 rounded">CI/CD</span>
-      </div>
-      <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] underline mr-2">Live Site</a>
-      <a href="https://github.com/HarveyAland/aws-cloud-resume" target="_blank" class="text-[#4c8dae] underline">GitHub</a>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2 class="text-3xl text-[#4c8dae] font-semibold border-b pb-2 mb-4">Contact</h2>
-      <p>Email: <a href="mailto:Harvey.aland.99@outlook.com" class="text-[#4c8dae] underline">Harvey.aland.99@outlook.com</a></p>
-      <p>GitHub: <a href="https://github.com/HarveyAland" target="_blank" class="text-[#4c8dae] underline">github.com/HarveyAland</a></p>
-      <p>Resume: <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] underline">resume.harveyaws.com</a></p>
+      <p>Email: <a href="mailto:Harvey.aland.99@outlook.com" class="text-[#4c8dae] hover:text-[#003366] underline transition">Harvey.aland.99@outlook.com</a></p>
+      <p>GitHub: <a href="https://github.com/HarveyAland" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">github.com/HarveyAland</a></p>
+      <p>Resume: <a href="https://resume.harveyaws.com" target="_blank" class="text-[#4c8dae] hover:text-[#003366] underline transition">resume.harveyaws.com</a></p>
       <p>Location: Heswall, Merseyside</p>
     </section>
   </main>
 
-  <footer class="text-center text-sm text-gray-600 py-6 border-t mt-10">
+  <footer class="text-center text-sm text-gray-600 py-6 border-t mt-8">
     Built with ❤️ using GitHub Pages & Tailwind CSS
   </footer>
 </body>
